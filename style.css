@@ -68,12 +68,28 @@ body {
 }
 
 @media (max-width: 600px) {
-    .image-container {
+    .foto {
         display: block;
     }
 
-    .image-container img {
+    .foto img {
         display: block;
         margin: 0 auto 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .instagram {
+        width: 4rem;
+    }
+
+    .download {
+        width: 4rem;
     }
 }
