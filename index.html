@@ -10,15 +10,15 @@
         body {
             background: linear-gradient(180deg, rgba(203,203,203,1) 0%, rgba(251,251,251,1) 100%);
             font-family: "Inter", sans-serif;
-            font-size: 1.5vw;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-size: 16px; /* Base font size for rem units */
         }
 
         p {
             text-align: center;
-            font-size: 5vw;
+            font-size: 2rem; /* Responsive units for text */
             color: #2C3531;
         }
 
@@ -27,12 +27,12 @@
         }
 
         h1 {
-            font-size: x-large;
+            font-size: 2.5rem;
             text-align: center;
         }
 
         h2 {
-            font-size: larger;
+            font-size: 2rem;
         }
 
         .center, .instagram {
@@ -42,15 +42,20 @@
             margin: 10px 0;
         }
 
+        .center {
+            flex-wrap: wrap;
+        }
+
         .center img {
             border: 3px solid #2C3531;
-            margin: 0 2px;
+            margin: 10px;
             border-radius: 7px;
-            width: 15vw; /* Updated for responsive */
+            width: 20rem;
+            height: auto;
         }
 
         .instagram img {
-            width: 3vw; /* Updated for responsive */
+            width: 5rem;
             height: auto;
             border: 3px solid #2C3531;
             border-radius: 22px;
@@ -59,38 +64,42 @@
         .download img {
             border: 3px solid #2C3531;
             border-radius: 10px;
-            width: 5vw; /* Updated for responsive */
+            width: 5rem;
             height: auto;
         }
 
         /* Media Queries for Mobile */
         @media (max-width: 600px) {
             body {
-                font-size: 4vw;
+                font-size: 12px; /* Adjust base font size for mobile */
             }
 
             p {
-                font-size: 6vw;
+                font-size: 2rem; /* Adjust text size for mobile */
             }
 
             h1 {
-                font-size: 6vw;
+                font-size: 2rem; /* Adjust heading size for mobile */
             }
 
             h2 {
-                font-size: 5vw;
+                font-size: 1.5rem; /* Adjust subheading size for mobile */
+            }
+
+            .center {
+                flex-direction: column;
             }
 
             .center img {
-                width: 60vw;
+                width: 80vw; /* Adjust image size for mobile */
             }
 
             .instagram img {
-                width: 20vw;
+                width: 4rem; /* Adjust Instagram icon size for mobile */
             }
 
             .download img {
-                width: 30vw;
+                width: 4rem; /* Adjust download button image size for mobile */
             }
         }
     </style>
@@ -108,7 +117,9 @@
     </div>
     <h1>Oyun İçerisinden Fotoğraflar</h1>
     <div class="center">
-        <img src="lobby.png" alt="lobby"> <img src="ingame1.jpg" alt="ingame1"> <img src="ingame2.jpg" alt="ingame2">
+        <img src="lobby.png" alt="lobby"> 
+        <img src="ingame1.jpg" alt="ingame1"> 
+        <img src="ingame2.jpg" alt="ingame2">
     </div>
     <div class="instagram">
         <a href="https://www.instagram.com/bilingo_game/reels/" target="_blank">
