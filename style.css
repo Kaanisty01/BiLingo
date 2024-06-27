@@ -1,0 +1,61 @@
+p {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: #3c3c3d;
+}
+
+h1 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: x-large;
+    color: #3c3c3d;
+}
+
+h2 {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: x-large;
+    color: #3c3c3d;
+    text-align: center;
+}
+
+.download {
+    width: 3vw;
+    border: 2px solid #3c3c3d;
+    border-radius: 10px;
+}
+
+.ingame1 {
+    width: 10vw;
+    border: 5px solid #3c3c3d;
+    border-radius: 10px;
+}
+
+.ingame2 {
+    width: 10vw;
+    border: 5px solid #3c3c3d;
+    border-radius: 10px;
+}
+
+.lobby {
+    width: 10vw;
+    border: 5px solid #3c3c3d;
+    border-radius: 10px;
+}
+
+.foto {
+    text-align: center;
+}
+
+.instagram {
+    width: 3vw;
+    border: 3px solid #3c3c3d;
+    border-radius: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+body {
+    background-color: #e1e1e3;
+}
