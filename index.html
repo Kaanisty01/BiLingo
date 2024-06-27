@@ -1,104 +1,121 @@
-<html>
-    <head>
-        <title>BiLingo</title>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>BiLingo</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="icon" href="owl.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, rgba(203,203,203,1) 0%, rgba(251,251,251,1) 100%);
+            font-family: "Inter", sans-serif;
+            font-size: 1.5vw;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <link rel="icon" href="owl.png">
+        p {
+            text-align: center;
+            font-size: 5vw;
+            color: #2C3531;
+        }
 
-        <style>
-            p {
-                text-align: center;
+        h1, h2 {
+            color: #2C3531;
+        }
+
+        h1 {
+            font-size: x-large;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: larger;
+        }
+
+        .center, .instagram {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .center img {
+            border: 3px solid #2C3531;
+            margin: 0 2px;
+            border-radius: 7px;
+            width: 15vw; /* Updated for responsive */
+        }
+
+        .instagram img {
+            width: 3vw; /* Updated for responsive */
+            height: auto;
+            border: 3px solid #2C3531;
+            border-radius: 22px;
+        }
+
+        .download img {
+            border: 3px solid #2C3531;
+            border-radius: 10px;
+            width: 5vw; /* Updated for responsive */
+            height: auto;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 600px) {
+            body {
                 font-size: 4vw;
-                color: #2C3531;
-                font-family: "Inter", sans-serif;
             }
 
-            h2{
-                color: #2C3531;
-                font-family: "Inter", sans-serif;
-                font-size: larger;
+            p {
+                font-size: 6vw;
             }
 
-            h1{
-                color: #2C3531;
-                font-family: "Inter", sans-serif;
-                font-size: x-large;
-                text-align: center;
+            h1 {
+                font-size: 6vw;
             }
 
-            .center{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 35vh;
-            }
-
-            .instagram{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 30vh;
-                border: none;
-                background: none;
-            }
-
-            .instagram img {
-                width: 4vw;
-                height: auto;
-                border: 3px solid #2C3531;
-                background: none;
-                border-radius: 22px;
+            h2 {
+                font-size: 5vw;
             }
 
             .center img {
-                border: 3px solid #2C3531;
-                margin: 0 2px;
-                border-radius: 7px;
-                width: 9vw;
+                width: 60vw;
+            }
+
+            .instagram img {
+                width: 20vw;
             }
 
             .download img {
-                border: 3px solid #2C3531;
-                border-radius: 10px;
-                width: 4vw;
-                height: 3vw;
+                width: 30vw;
             }
-
-            body {
-                background: rgb(203,203,203);
-                background: linear-gradient(180deg, rgba(203,203,203,1) 0%, rgba(251,251,251,1) 100%);
-                font-size: 1.5vw;
-            }
-
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        </style>
-    </head>
-
-    <body>
-        <p>BiLingo</p><br><br><br>
-        <h2>BiLingo, Türkçe ve İngilizce oynanabilen bir kelime oyunudur.<br>Okuma yazma bilen her yaş grubu için uygun; oynaması kolay bir oyundur.<br>Sorulan kelimeyi bul ve sonraki seviyeye geç.</h2>
-        
-        <Div class="download">
-            <a href="https://play.google.com/store/apps/details?id=com.LingoTurkce" target="_blank">
-                <button style="background: none; border: none;">
-                    <img src="INDIR.png" alt="download" width="50px" height="40px">
-                </button>
-            </a>
-        </Div>
-        <br>
-        <h1 style="text-align: center; width: 97vw;">Oyun İçerisinden Fotoğraflar</h1><br>
-        <div class="center">
-            <img src="lobby.png" alt="lobby">   <img src="ingame1.jpg" alt="ingame1">   <img src="ingame2.jpg" alt="ingame2">
-        </div>
-
-        <div class="instagram">
-            <a href="https://www.instagram.com/bilingo_game/reels/" target="_blank">
-                <button style="background: none; border: none;">
-                    <img src="instagram.png" alt="instagram">
-                </button>
-            </a>
-        </div>
-
-
-    </body>
+        }
+    </style>
+</head>
+<body>
+    <p>BiLingo</p>
+    <h2>BiLingo, Türkçe ve İngilizce oynanabilen bir kelime oyunudur.<br>Okuma yazma bilen her yaş grubu için uygun; oynaması kolay bir oyundur.<br>Sorulan kelimeyi bul ve sonraki seviyeye geç.</h2>
+    
+    <div class="download">
+        <a href="https://play.google.com/store/apps/details?id=com.LingoTurkce" target="_blank">
+            <button style="background: none; border: none;">
+                <img src="INDIR.png" alt="download">
+            </button>
+        </a>
+    </div>
+    <h1>Oyun İçerisinden Fotoğraflar</h1>
+    <div class="center">
+        <img src="lobby.png" alt="lobby"> <img src="ingame1.jpg" alt="ingame1"> <img src="ingame2.jpg" alt="ingame2">
+    </div>
+    <div class="instagram">
+        <a href="https://www.instagram.com/bilingo_game/reels/" target="_blank">
+            <button style="background: none; border: none;">
+                <img src="instagram.png" alt="instagram">
+            </button>
+        </a>
+    </div>
+</body>
 </html>
