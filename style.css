@@ -1,19 +1,19 @@
 p {
     font-family: "Fira Sans Condensed", sans-serif;
-    font-size: xx-large;
+    font-size: 3vw;
     text-align: center;
     color: #3c3c3d;
 }
 
 h1 {
     font-family: "Fira Sans Condensed", sans-serif;
-    font-size: x-large;
+    font-size: 1.5vw;
     color: #3c3c3d;
 }
 
 h2 {
     font-family: "Fira Sans Condensed", sans-serif;
-    font-size: x-large;
+    font-size: 2vw;
     color: #3c3c3d;
     text-align: center;
 }
@@ -44,6 +44,13 @@ h2 {
 
 .foto {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto img {
+    max-width: 100%;
+    height: auto;
 }
 
 .instagram {
@@ -58,4 +65,15 @@ h2 {
 
 body {
     background-color: #e1e1e3;
+}
+
+@media (max-width: 600px) {
+    .image-container {
+        display: block;
+    }
+
+    .image-container img {
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
